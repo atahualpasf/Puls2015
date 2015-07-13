@@ -1,3 +1,48 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?c7mj15');
+	src:url('fonts/icomoon.eot?#iefixc7mj15') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?c7mj15') format('truetype'),
+		url('fonts/icomoon.woff?c7mj15') format('woff'),
+		url('fonts/icomoon.svg?c7mj15#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+	content: "\e600";
+	color: #FFC200;
+	margin-right: .3em;
+	position: relative;
+	top: .2em
+}
+.icon-arrow-circle-down:before {
+	content: "\e601";
+	color: rgb(174, 0, 0);
+}
+.icon-arrow-circle-up:before {
+	content: "\e602";
+	color: green;
+}
+.icon-pencil:before {
+	content: "\e603";
+	margin-right: .8em;
+}
+
 a {
 	color: #22BCE0;
 }
@@ -56,8 +101,8 @@ header #logo img {
 	width: 52px;
 }
 nav {
-	background: #80BCA3;
-	padding: 0 0.5em;
+	background: #8280BC;
+	padding: 0 5.5em 0 0;
 	position: relative;
 }
 nav ul {
@@ -144,6 +189,9 @@ nav ul li a {
 	padding: 0.2em 0.5em;
 	top: 100%;
 	width: 90%;
+}
+#contenido .item .votacion a {
+	text-decoration: none;
 }
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item {
