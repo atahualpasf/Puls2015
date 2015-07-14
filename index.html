@@ -30,10 +30,15 @@
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">Django</a></li>
 			<li id="publicar_nav">
-				<a href="#" class="icon-pencil">Publicar</a>
+				<a href="#" class="icon-pencil" id="publicar">Publicar</a>
 			</li>
 		</ul>
 	</nav>
+	<form action="" id="formulario" class="formulario">
+		<input type="text" id="titulo" placeholder="Título" required>
+		<input type="url" id="url" placeholder="Link" required>
+		<input type="submit" value="Agregar">
+	</form>
 	<aside>
 		<video width="320" height="240" autoplay controls>
 			<source src="videos/lecturas.mp4" type="video/mp4" >
@@ -155,5 +160,7 @@
 			Curso de mejorando.la
 		</p>
 	</footer>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/formulario.js"></script>
 </body>
 </html>
