@@ -94,11 +94,21 @@ header #avatar img {
 	border-radius: 50%;
 	width: 55px;
 }
-header #logo img {
+header #logo {
 	border-right: 1px solid white;
+	margin-right: 0.5em;
+}
+header #logo img {
 	margin-right: 0.5em;
 	padding-right: 0.5em;
 	width: 52px;
+	-webkit-transition: .5s;
+}
+header #logo img:hover {
+	-webkit-transform:rotate(360deg);/*chrome*/
+	/*-moz-transform:rotate(90deg);mozilla*/
+	/*-o-transform:rotate(90deg);opera old*/
+	/*-ms-transform:rotate(90deg);ie exlorer*/
 }
 nav {
 	background: #8280BC;
@@ -132,6 +142,7 @@ nav ul li a {
 	color: white;
 	display: block;
 	padding: 0.5em 0;
+	margin-left: 0.5em;
 }
 aside {
 	display: none;
@@ -187,11 +198,10 @@ aside {
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
 	position: absolute;
-	left: 5%;
 	margin-top: 3px;
-	padding: 0.2em 0.5em;
+	padding: 0.2em 3% 0.2em 3%;
 	top: 100%;
-	width: 90%;
+	width: 94%;
 }
 #contenido .item .votacion a {
 	text-decoration: none;
