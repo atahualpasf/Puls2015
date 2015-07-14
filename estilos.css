@@ -130,9 +130,20 @@ nav ul #publicar_nav a {
 	border-radius: 5px;
 	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
 	font-style: italic;
-	padding: 0.8em 0.5em;
+	padding: 0.8em 0.5em 0.8em 2em;
 	text-decoration: none;
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+}
+nav ul #publicar_nav a:before {
+	position: absolute;
+	top: .8em;
+	left: 1em;
+}
+nav ul #publicar_nav a:hover:before {
+	/*-webkit-transform: scale(1.5);*/
+	font-size: 20px;
+	top: 0.5em;
+	left: 0.7em;
 }
 nav ul li {
 	display: inline-block;
@@ -141,8 +152,12 @@ nav ul li {
 nav ul li a {
 	color: white;
 	display: block;
-	padding: 0.5em 0;
+	padding: 0.5em;
 	margin-left: 0.5em;
+	-webkit-transition: .3s;
+}
+nav ul li a:hover {
+	background: #344B54;
 }
 aside {
 	display: none;
