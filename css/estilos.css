@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?1ygoq6');
-	src:url('fonts/icomoon.eot?#iefix1ygoq6') format('embedded-opentype'),
-		url('fonts/icomoon.ttf?1ygoq6') format('truetype'),
-		url('fonts/icomoon.woff?1ygoq6') format('woff'),
-		url('fonts/icomoon.svg?1ygoq6#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?1ygoq6');
+	src:url('../fonts/icomoon.eot?#iefix1ygoq6') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?1ygoq6') format('truetype'),
+		url('../fonts/icomoon.woff?1ygoq6') format('woff'),
+		url('../fonts/icomoon.svg?1ygoq6#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -58,10 +58,10 @@ footer {
 	text-align: center;
 }
 footer p:first-child {
-	margin-bottom: 0;
+	margin-bottom: 0 auto;
 }
 footer p:last-child {
-	margin-top: 0;
+	margin-top: 0 auto;
 }
 footer p:last-child:before {
 	content: "- ";
