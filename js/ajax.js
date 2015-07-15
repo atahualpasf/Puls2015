@@ -57,8 +57,12 @@ function obtenerGeoClima(woeid) {
 function procesarGeoClima(data) {
 	var clima 	= data.query.results.channel,
 		temp	= clima.item.condition.temp,
-		unit	= clima.units.temperature;
+		unit	= clima.units.temperature,
+		code	= clima.item.condition.code;
+		img		= new Image();
+		img.src	= 'http://l.yimg.com/a/i/us/we/52/' + code + '.gif';
 
 	$('#clima')
+		.append(img)
 		.append(temp + ' ' + unit + 'º');
 }
