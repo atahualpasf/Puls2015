@@ -64,5 +64,5 @@ function procesarGeoClima(data) {
 
 	$('#clima')
 		.append(img)
-		.append(temp + ' ' + unit + 'º');
+		.append('<p><strong>' + temp + ' ' + unit + 'º</strong></p>');
 }

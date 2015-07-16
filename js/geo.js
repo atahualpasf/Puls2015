@@ -10,8 +10,8 @@ $(function() {
 		var lat = position.coords.latitude;
 		var lon = position.coords.longitude;
 		var mapa = new Image();
-		mapa.src = "http://maps.googleapis.com/maps/api/staticmap?maptype=hybrid&zoom=13&size=180x150&sensor=false&center="+lat+','+lon;
-		$('#geo').append(mapa);
+		mapa.src = "http://maps.googleapis.com/maps/api/staticmap?maptype=hybrid&zoom=13&size=246x150&sensor=false&center="+lat+','+lon;
+		$('.map').append(mapa);
 
 		obtenerGeoInformacion(lat, lon);
 	}
