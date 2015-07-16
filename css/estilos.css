@@ -17,8 +17,6 @@
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-
-	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -108,10 +106,7 @@ header #logo img {
 	-webkit-transition: .5s;
 }
 header #logo img:hover {
-	-webkit-transform:rotate(360deg);/*chrome*/
-	/*-moz-transform:rotate(90deg);mozilla*/
-	/*-o-transform:rotate(90deg);opera old*/
-	/*-ms-transform:rotate(90deg);ie exlorer*/
+	-webkit-transform:rotate(360deg);
 }
 nav {
 	background: #8280BC;
@@ -143,7 +138,6 @@ nav ul #publicar_nav a:before {
 	left: 1em;
 }
 nav ul #publicar_nav a:hover:before {
-	/*-webkit-transform: scale(1.5);*/
 	font-size: 20px;
 	top: 0.5em;
 	left: 0.7em;
@@ -226,12 +220,6 @@ nav ul li a:hover {
 	float: right;
 }
 
-/*@media print {
-	body {
-		font-size: 50px;
-	}
-}*/
-
 @media screen and (min-width: 800px) {
 	#contenido {
 		overflow: hidden;
@@ -239,8 +227,6 @@ nav ul li a:hover {
 
 	#contenido .item {
 		width: 49%;
-		/*width: 48%;
-		display: inline-block;*/
 		float: left;
 	}
 	#contenido .item:nth-child(odd) {
